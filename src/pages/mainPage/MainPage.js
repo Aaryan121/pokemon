@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchPokemon } from '../../redux/features/pokeSlice'
 import { fetchedHomeData } from '../../Assets/Data/Data'
 import Card from '../../Components/pokemonCard/Card'
+import "./MainPage.css"
 
 
 const MainPage = () => {
@@ -27,9 +28,12 @@ const MainPage = () => {
             <input type="text" onChange={(e)=>{setPoke(e.target.value)}}/>
             <button type='submit'>Search</button>
         </form>
+        <div className="cardContainer">
+            
         {fetchedHomeData.map((data)=> 
         <Card key={data.id}  data={data} />
         )}
+        </div>
     </div>
   )
 }
