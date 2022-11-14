@@ -1,7 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.formContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../Assets/img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+.form{
+    background-color: rgba(255, 255, 255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.inputBox{
+    padding: 5px 20px ;
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.inputBox::placeholder{
+    color: white;
+}
 
 
+.inputBox:hover{
+    color: yellow;
+}
 
+.btn{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
 
+.btn:hover{
+    color: yellow;
+}
+
+.inputBox:focus{
+    outline: none;
+}
 
 
 

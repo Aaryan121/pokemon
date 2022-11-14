@@ -1,0 +1,11 @@
+.navBar{
+    width: 100%;
+    position: fixed;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navBar > img{
+    width: 100px;
+    object-fit: cover;
+}
