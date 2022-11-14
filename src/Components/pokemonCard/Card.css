@@ -12,7 +12,14 @@
 .pokeImg{
     padding: 25px;
     object-fit: cover;
-    border-radius: 50%;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25);
 }
 
 .pokeId{
@@ -31,9 +38,6 @@
     display: flex;
 }
 
-.types > *:first-child{
-    background-color: white;
-}
 
 .type{
     margin-right: 15px;

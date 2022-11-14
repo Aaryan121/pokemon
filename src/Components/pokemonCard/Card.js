@@ -29,12 +29,14 @@ const Card = ({data}) => {
 
     <div style={{backgroundColor: `${color}`}} className='container' >
         <img className='pokeImg' src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokeIndex}.png`} alt="" />
-        <div className='pokeId'>{`#${pokeIndex}`}</div>
-        <div className='title'>{data.name}</div>
-        <div className="types">
-            {data.types.map((el)=>
-            <div style={{backgroundColor: `${colors[el.type.name]}`}}  className="type">{el.type.name}</div>)
-            }
+        <div className="desc">
+            <div className='pokeId'>{`#${pokeIndex}`}</div>
+            <div className='title'>{data.name}</div>
+            <div className="types">
+                {data.types.map((el)=>
+                <div style={{backgroundColor: `${colors[el. type.name]}`}}  className="type">{el.type.name}</div>)
+                }
+            </div>
         </div>
     </div>
   )
