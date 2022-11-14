@@ -1,7 +1,9 @@
+import MainPage from "./pages/mainPage/MainPage";
+
 
 function App() {
   return (
-    <div>Pokemon</div>
+    <MainPage />
   );
 }
 
