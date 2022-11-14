@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.pokeImg{
+    padding: 25px;
+    object-fit: cover;
+}
+
+.pokeId{
+    color: gray;
+}
+
+.title{
+    padding: 10px 0px;
+}
+
+.types{
+    display: flex;
+}
+
+.type{
+    margin-right: 15px;
+}
