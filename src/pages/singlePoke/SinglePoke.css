@@ -9,30 +9,42 @@
     flex-wrap: wrap;
     font-family: 'Nunito', sans-serif;
     gap: 30px;
-}
-.textWrapper{
-    height: 100%;
-}
+    background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+    height: 100vh;
+}   
+
 
 .imageWrapper >img{
     object-fit: cover;
+    transition: all .2s ease-in-out;
+}
+
+.imageWrapper > img:hover{
+    transform: scale(1.1);
 }
 
 .name{
     font-size: 40px;
     margin-bottom: 20px;
+    text-align: center;
 
 }
 
+.name::first-letter{
+    text-transform: capitalize;
+}
+
 .desc1{
-    background-color: gray;
+    background-color: #FDDFDF;
     padding:  15px 5px;
     border-radius: 10px;
 
 }
 
 .statContainer{
-    background-color: cyan;
+    background-color: #DEF3FD;
     padding: 15px 5px;
     border-radius: 10px;
     margin-top: 10px;
@@ -46,18 +58,22 @@ ul{
 
 li{
     margin-right: 10px;
+    margin-left: 10px;
     padding:  1px 0px;
+    background-color: #FDDFDF;
+    padding: 2px 6px;
+    border-radius: 5px;
 }
 
 .types1{
-    background-color: antiquewhite;
+    background-color: #FCF7DE;
     margin-top: 10px;
     padding: 15px 5px;
     border-radius: 10px;
 }
 
-.weakness{
-    background-color: azure;
+.ability{
+    background-color: #d5d5d4;
     margin-top: 10px;
     padding: 15px 5px;
     border-radius: 10px;

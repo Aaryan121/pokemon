@@ -14,10 +14,6 @@ const SinglePoke = () => {
     const pokeIndex =  ("000" + gId).slice(-3)
     const pokeData = useSelector((state) => state.pokemon)
     const dispatch = useDispatch()
-    useEffect(()=>{
-        
-
-    },[])
 
 
 
@@ -41,12 +37,14 @@ const SinglePoke = () => {
                 <li>Category: {pokeData.data.types[0].type.name}</li>
             
             </ul>
-                <div>Abilities: {pokeData.data.abilities.map(e => <li key={uuidv4()}>{e.ability.name}</li>)}</div>
         </div>
+        <ul className="ability">Abilities: {pokeData.data.abilities.map(e => <li key={uuidv4()}>{e.ability.name}</li>)}</ul>
+        
 
-        <div className="types1">
+        <ul className="types1">
+            <p>Type:</p>
             {pokeData.data.types.map((t) => <li key={uuidv4()}> {t.type.name} </li>)}
-        </div>
+        </ul>
 
         </div>
         
