@@ -15,6 +15,11 @@
     height: 100vh;
 }   
 
+.imageWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .imageWrapper >img{
     object-fit: cover;
@@ -62,6 +67,7 @@ ul{
 }
 
 li{
+    margin-top: 5px;
     margin-right: 10px;
     margin-left: 10px;
     padding:  1px 0px;
