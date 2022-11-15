@@ -40,7 +40,7 @@ const MainPage = () => {
         <div className="formContainer">
         {sres.error && <div className="err">Pokemon Not Found</div> }
         <form className='form' onSubmit={handelSubmit}>
-            <input placeholder='Enter Pokemon Name...' className='inputBox' type="text" onChange={(e)=>{setPoke(e.target.value)}}/>
+            <input placeholder='Enter Pokemon Name...' className='inputBox' type="text" onChange={(e)=>{setPoke(e.target.value.toLowerCase())}}/>
             <button className='btn' type='submit'>
                     <BiSearch />
             </button>
