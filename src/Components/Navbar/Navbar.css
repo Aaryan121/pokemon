@@ -5,7 +5,7 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navBar > img{
+.navImg{
     width: 100px;
     object-fit: cover;
 }

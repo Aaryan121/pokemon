@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./Card.css"
 
 const Card = ({data}) => {
@@ -26,8 +27,8 @@ const Card = ({data}) => {
     const color = colors[type]
 
   return (
-
-    <div style={{backgroundColor: `${color}`}} className='container' >
+    <Link className='link' to={`/poke/${data.id}`}>
+        <div style={{backgroundColor: `${color}`}} className='container' >
         <img className='pokeImg' src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokeIndex}.png`} alt="" />
         <div className="desc">
             <div className='pokeId'>{`#${pokeIndex}`}</div>
@@ -39,6 +40,8 @@ const Card = ({data}) => {
             </div>
         </div>
     </div>
+    </Link>
+    
   )
 }
 
