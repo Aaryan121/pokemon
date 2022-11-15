@@ -1,5 +1,4 @@
 import React from 'react'
-import { SiPokemon } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import "./Navbar.css"
 

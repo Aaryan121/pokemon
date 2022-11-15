@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import "./Card.css"
 import { v4 as uuidv4 } from 'uuid';
 import {  useNavigate } from 'react-router-dom'
@@ -50,7 +49,7 @@ const Card = ({data}) => {
             <div className='title'>{data.name}</div>
             <div className="types">
                 {data.types.map((el)=>
-                <div key={uuidv4()} style={{backgroundColor: `${colors[el. type.name]}`}}  className="type">{el.type.name}</div>)
+                <div key={uuidv4()} style={{backgroundColor: `${colors[el.type.name]}`}}  className="type">{el.type.name}</div>)
                 }
             </div>
         </div>

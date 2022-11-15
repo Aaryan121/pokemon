@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState , useEffect } from 'react'
+import { useState , } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchPokemon } from '../../redux/features/pokeSlice'
 import { fetchedHomeData } from '../../Assets/Data/Data'
@@ -16,7 +16,7 @@ const MainPage = () => {
     const [poke,setPoke] = useState("")
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const initialPoke = useSelector((state) => state.pokemon)
+    //const initialPoke = useSelector((state) => state.pokemon)
     //const res = useSelector( (state)=> state.pokemon) 
     const sres = useSelector( (state)=> state.pokemon)
     

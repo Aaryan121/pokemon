@@ -1,9 +1,6 @@
-import { useDispatch, useSelector } from "react-redux"
+import {  useSelector } from "react-redux"
 import "./SinglePoke.css"
 import { useLocation } from "react-router-dom"
-import { fetchPokemon } from '../../redux/features/pokeSlice'
-import { useEffect } from "react"
-import { useState } from "react"
 import {v4 as uuidv4} from "uuid"
 
 const SinglePoke = () => {
@@ -13,7 +10,7 @@ const SinglePoke = () => {
     const gId = location.pathname.split("/")[2]
     const pokeIndex =  ("000" + gId).slice(-3)
     const pokeData = useSelector((state) => state.pokemon)
-    const dispatch = useDispatch()
+
 
 
 
