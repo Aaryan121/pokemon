@@ -2,6 +2,7 @@ import { createSlice , createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios"
 
 
+
 const initialState = {
     loading: "idle",
     poke:"",
@@ -43,7 +44,6 @@ const pokeSlice = createSlice({
             state.loading = false
             state.data =null
             state.error = action.error.message
-            console.log(state.error)
         })
     }
 })
